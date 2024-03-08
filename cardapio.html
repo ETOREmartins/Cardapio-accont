@@ -1,0 +1,163 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Carnage   </title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lanches Caindo</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #ff0000;
+                /* Vermelho */
+            }
+
+            .lanches {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background-image: url("big-mac-lanche.png");
+                background-size: cover;
+                animation: cair 4s linear infinite;
+            }
+
+            @keyframes cair {
+                0% {
+                    transform: translateY(-100%);
+                }
+
+                100% {
+                    transform: translateY(100vh);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="lanches" style="left: 10%;"></div>
+        <div class="lanches" style="left: 30%;"></div>
+        <div class="lanches" style="left: 50%;"></div>
+        <div class="lanches" style="left: 70%;"></div>
+        <div class="lanches" style="left: 90%;"></div>
+
+    </body>
+
+    </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ff0000;
+        }
+
+        .menu-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .item-description {
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .item-price {
+            font-size: 16px;
+            color: #333;
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .item-image {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+        }
+    </style>
+    </head>
+    <body>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="imagnes/combo.jpg"Prato 1" class="item-image">
+            <div>
+                <span class="item-name">Combo supremo</span>
+                <p class="item-description">Um combo que promete te deixar em uma brisa eterna querendo mais.</p>
+            </div>
+            <span class="item-price">$67,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="imagnes/smoke.jpg" alt="Prato 2" class="item-image">
+            <div>
+                <span class="item-name">Lanche GTA</span>
+                <p class="item-description">Provado pelo própio Big Smoke, melhor lancheda sua vida.</p>
+            </div>
+            <span class="item-price">$44,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="imagnes/png-transparent-cheeseburger-whopper-fast-food-breakfast-sandwich-mcdonald-s-big-mac-lanche-thumbnail-removebg-preview (2).png" alt="Prato 3" class="item-image">
+            <div>
+                <span class="item-name">Lanche misterioso</span>
+                <p class="item-description">Lanche comum porem misterioso, compre, prove e veja o que acontece.</p>
+            </div>
+            <span class="item-price">$35,00</span>
+        </div>
+        <div class="menu-item">
+            <img src="imagnes/pizza.jpg" alt="Pizza Cogulandia" class="item-image">
+            <div>
+                <span class="item-name">Pizza Cogulandia</span>
+                <p class="item-description">Uma pizza que promete ter os mesmos efietos de um cogumelo, promete também te desmaiar no primeiro pedaço.</p>
+            </div>
+            <span class="item-price">$85</span>
+        </div>
+    </div>
+
+    </body>
+    </html>
